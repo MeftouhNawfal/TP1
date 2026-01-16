@@ -6,49 +6,23 @@ import image4 from "./images/image4.jpg";
 
 
 function App() {
-  const products = [
-    {
-      id: 1,
-      title: "PC Portable Gamer HP VICTUS",
-      price: "7490 DH",
-      thumbnail: image1,
-    },
-    {
-      id: 2,
-      title: "PC Portable Gamer HP VICTUS",
-      price: "2190 DH",
-      thumbnail: image2,
-    },
-    {
-      id: 3,
-      title: "PC Portable Chromebook Acer",
-      price: "3640 DH",
-      thumbnail: image3,
-    },
-    {
-      id: 4,
-      title: "PC Portable - HUAWEI",
-      price: "1270 DH",
-      thumbnail: image4,
-    },
-  ];
+  
 
   return (
     <div className="container">
-      {products.map((product) => (
-        <div className="card" key={product.id}>
+      
+        <div className="card" >
           <img
-            src={product.thumbnail}
-            alt={product.title}
+            src={image1}
+            alt={"image1"}
             className="card-image"
           />
 
-          <p className="card-title">{product.title}</p>
-          <p className="card-price">{product.price}</p>
+          <p className="card-title">PC portable Game hp</p>
+          <p className="card-price">7490</p>
 
           <button className="btn">Ajouter au panier</button>
         </div>
-      ))}
     </div>
   );
 }
